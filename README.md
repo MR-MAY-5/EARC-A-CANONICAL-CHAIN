@@ -1,5 +1,5 @@
 # EARC - CANONICAL CHAIN 
-PRIVATE ETHREUM TEST NETWORK IN ETHEREUM BLOCKCHAIN
+PRIVATE ETHEREUM TEST NETWORK IN ETHEREUM BLOCKCHAIN
 ## DOCUMENTATION
 Truffle and Ganache that can easily emulate Ethereum Node for Development Purposes. These fake Ethereum Node are an easy way to test application.They are just Emulators they provide the same interface as on Ethereum Node deployed in Public Ethereum Network, but Internally they work compeletly different.
   
