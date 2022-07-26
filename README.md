@@ -1,7 +1,7 @@
 # EARC - CANONICAL CHAIN 
 PRIVATE ETHEREUM TEST NETWORK IN ETHEREUM BLOCKCHAIN
 ## DOCUMENTATION
-Truffle and Ganache that can easily emulate Ethereum Node for Development Purposes. These fake Ethereum Node are an easy way to test application.They are just Emulators they provide the same interface as on Ethereum Node deployed in Public Ethereum Network, but Internally they work compeletly different.
+Truffle and Ganache can easily emulate Ethereum Node for Development Purposes. These fake Ethereum Nodes act as an easy way to test applications.They are just Emulators they provide the same interface as on Ethereum Node deployed in Public Ethereum Network, but Internally they work compeletly different.
   
 **Step 1 :** Create the folder to host the database and accounts for our Private Node.
 ```
@@ -10,7 +10,7 @@ cd <name of the folder>/private
 ```
 **Step 2 :** Before creating our Private Instance, Genesis Block must be Defined. Genesis Block is a block that will define the initial behaviou of our Blockchain Instance.
 
-Creating a Genesis Block file from scartch acn be painful and reusing the exsisting one can be a problem if its version are older than the current installation of "GETH".To ensure that the Genesis Block file is compete with current versions of Geth. Create it using a tool called "PUPPETH".Puppeth is a Command line tool installed in parallel with Geth and provides features to Create and Monitor your own Ethereum Node.
+Creating a Genesis Block file from scartch acn be a painful process and reusing the exsisting one can be a problem if its version is older than the current installation of "GETH". To ensure the Genesis Block file is complete with current versions of Geth, create it using a tool called "PUPPETH".Puppeth is a Command line tool installed in parallel with Geth and provides features to Create and Monitor your own Ethereum Node.
 
 Here we are using Puppeth to Create Genesis Block file.
 ```
@@ -25,15 +25,15 @@ sudo apt-get install ethereum
 ```
 Puppeth
 ```
-In Puppeth we have to set the "Consensus Engine" that we want to use.A consensus Algorithm is a procedure through which all the peer of the Blockchain Network reach a common agreement about the Present State of the Distributed Ledger.So After the Process Genesis Block has been created but still it is in memory and it need to to be exported into a file.Now, we have our Genesis Block file, Let use it to initialize our Private Ethereum Node.
+In Puppeth we have to set the "Consensus Engine" we want to use. A consensus Algorithm is a procedure through which all the peer of the Blockchain Network reach a common agreement about the Present State of the Distributed Ledger.So After the Process Genesis Block will be created but still it is in memory and it needs to be exported into a file. Now, we have our Genesis Block file, Let use it to initialize our Private Ethereum Node.
 
-Private Node will be Created Using Geth-Command by using this Command we Will Initalize the node with the Genesis Block which is in the exported file.
+Private Node will be Created Using Geth-Command. Using this Command Will Initalize the node with the Genesis Block which is in the exported file.
 ```
 geth --datadir . init <network Adminstrator name>.json
 ```
 This above command creates 2 Directories, one for the "GETH CHAINDATA" and Another one is called "KEYSTORE".
-Keystore will contain our Accounts of our Ethereum Node.
-Now, we will create 3 Accounts that we will use during this setup
+Keystore will contain the Accounts of our Ethereum Node.
+Now, we will create 3 Accounts to be used during this setup
 > Account 1 will receive Mining Rewards 
 
 > Accounts 2 & 3 will act as a sender and receiver 
