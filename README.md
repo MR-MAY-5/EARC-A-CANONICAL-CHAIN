@@ -15,8 +15,14 @@ Creating a Genesis Block file from scartch acn be painful and reusing the exsist
 Here we are using Puppeth to Create Genesis Block file.
 ```
 sudo add-apt-repository -y ppa:ethereum/ethereum
+```
+```
 sudo apt-get update
+```
+```
 sudo apt-get install ethereum
+```
+```
 Puppeth
 ```
 In Puppeth we have to set the "Consensus Engine" that we want to use.A consensus Algorithm is a procedure through which all the peer of the Blockchain Network reach a common agreement about the Present State of the Distributed Ledger.So After the Process Genesis Block has been created but still it is in memory and it need to to be exported into a file.Now, we have our Genesis Block file, Let use it to initialize our Private Ethereum Node.
