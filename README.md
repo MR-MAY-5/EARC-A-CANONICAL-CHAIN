@@ -6,6 +6,8 @@ Truffle and Ganache can easily emulate Ethereum Node for Development Purposes. T
 **Step 1 :** Create the folder to host the database and accounts for our Private Node.
 ```
 mkdir -p <name of the folder>/private
+```
+```
 cd <name of the folder>/private
 ```
 **Step 2 :** Before creating our Private Instance, Genesis Block must be Defined. Genesis Block is a block that will define the initial behaviou of our Blockchain Instance.
