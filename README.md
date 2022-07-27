@@ -5,10 +5,10 @@ Truffle and Ganache can easily emulate Ethereum Node for Development Purposes. T
   
 **Step 1 :** Create the folder to host the database and accounts for our Private Node.
 ```
-mkdir -p <name of the folder>/private
+mkdir -p name of the folder/private
 ```
 ```
-cd <name of the folder>/private
+cd name of the folder/private
 ```
 **Step 2 :** Before creating our Private Instance, Genesis Block must be Defined. Genesis Block is a block that will define the initial behaviou of our Blockchain Instance.
 
@@ -31,7 +31,7 @@ In Puppeth we have to set the "Consensus Engine" we want to use. A consensus Alg
 
 Private Node will be Created Using Geth-Command. Using this Command Will Initalize the node with the Genesis Block which is in the exported file.
 ```
-geth --datadir . init <network Adminstrator name>.json
+geth --datadir . init NetworkAdminstratorname.json
 ```
 This above command creates 2 Directories, one for the "GETH CHAINDATA" and Another one is called "KEYSTORE".
 Keystore will contain the Accounts of our Ethereum Node.
@@ -59,7 +59,7 @@ Inorder to start the Private Ethereum Node and Mine the Blocks we have to create
 
 Use Atom to Create that Script Named <script name>.sh inside the Private Directory.
 ```
-atom <script name>.sh
+atom script name.sh
 ```
 ## Network Script.sh
 ```
@@ -71,10 +71,10 @@ geth --network id <id of the Ethereum Private Network> --mine --minethreads 2 --
 	
 Then before running the file <script name>.sh we must turn it into the executable file and run.
 ```
-chmod +x <script name>.sh
+chmod +x script name.sh
 ```
 ```
-./<script name>.sh
+./script name.sh
 ```
 
 So let Start the script, Now terminal shows the list of line says "GENERATING DAG PROGRESS" and in each line it have percentage element that shows the progress of the DAG GENERATION.
@@ -107,7 +107,7 @@ eth.getBalance(eth.coinbase)
 ```
 4.To display the Account balance of specific Account in our Private Node with their respective index no.
 ```
-eth.getBalance(eth.accounts[<index of Account no.>])
+eth.getBalance(eth.accounts[index of Account no.])
 ```
 5.To display the Account balance of Coinbase Account in terms of ETH.
 ```
@@ -115,7 +115,7 @@ web3.fromWei(eth.getBalance(eth.coinbase), "ether")
 ```
 6.To display the Account balance of specific Account in our Private Node with their respective index no. in terms of ETH.
 ```
-web3.fromWei(eth.getBalance(eth.accounts[<index of Account no.>]), "ether")
+web3.fromWei(eth.getBalance(eth.accounts[index of Account no.]), "ether")
 ```
 7.To stop Mining Process.
 ```
@@ -123,7 +123,7 @@ miner.stop()
 ```
 8.To restart the Mining Process with no. of threads as its Parameter.
 ```
-miner.start(<no. of threads>)
+miner.start(no. of threads)
 ```
 9.To get info of Chain Id.
 ```
@@ -133,6 +133,6 @@ net.version
 ```
 eth.sendTransaction({from:eth.coinbase,
 		     to:eth.accounts[index no.],
-		     value:web.toWei(<Transaction Amount>,"ether")})
+		     value:web.toWei(Transaction Amount,"ether")})
 ```
 ------------------------------------------------------------------------------------------------------------
