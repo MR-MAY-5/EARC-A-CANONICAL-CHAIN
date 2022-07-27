@@ -52,10 +52,10 @@ Three Accounts are created and each account have their Unique Address and Privat
 geth --datadir . account list
 ```
 **NOTE:**
-      By default the first Account in Private Ethereum Node with the index 0 is the one will receive all the Mining Rewards.
+      By default the first Account in Private Ethereum Node with the index 0 is the one to receive all the Mining Rewards.
 
-Therefore we initialize Our Private Node and created 3 Accounts for it, but still the Node aren't Started.
-Inorder to start the Private Ethereum Node and Mine the Blocks we have to create a Script that will require all the parameters to let us to Intreact with the Private Ethereum Node.
+Therefore we initialize Our Private Node and create 3 Accounts for it, but still the Nodes aren't Started.
+Inorder to start the Private Ethereum Node and Mine the Blocks, we have to create a Script that will require all the parameters to let us Intreact with the Private Ethereum Node.
 
 Use Atom to Create that Script Named <script name>.sh inside the Private Directory.
 ```
@@ -69,7 +69,7 @@ geth --network id <id of the Ethereum Private Network> --mine --minethreads 2 --
 **NOTE:**
 	Create a password file accordingly
 	
-Then before running the file <script name>.sh we must turn it into the executable file and run.
+Before running the file <script name>.sh we must turn it into the executable file and run.
 ```
 chmod +x script name.sh
 ```
@@ -78,12 +78,12 @@ chmod +x script name.sh
 ```
 
 So let Start the script, Now terminal shows the list of line says "GENERATING DAG PROGRESS" and in each line it have percentage element that shows the progress of the DAG GENERATION.
-DAG (or) Directed Acyclic Graph is a Data Structure is needed by the Ethash Algorithm. DAG is Generated every 30,000 Blocks and Period of 30,000 blocks is called as an "EPOCH".
+DAG (or) Directed Acyclic Graph is a Data Structure needed by the Ethash Algorithm. DAG is Generated every 30,000 Blocks and Period of 30,000 blocks is called as an "EPOCH".
 
 
 ## ADDITIONAL CONTENT
 
-To attach the Geth Console to the running Node, The below cmd will connect Private Node with the Geth Javascript Console.
+To attach the Geth Console to the running Node, The below command will connect Private Node with the Geth Javascript Console.
 ```
 geth attach
 ```
